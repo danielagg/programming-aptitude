@@ -1,4 +1,4 @@
-namespace MM_Guide_Programming_Aptitude.Question3;
+namespace Programming_Aptitude.Question3;
 
 public class Test
 {

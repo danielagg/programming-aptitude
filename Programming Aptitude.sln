@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MM Guide Programming Aptitude", "MM Guide Programming Aptitude.csproj", "{BEB05B5D-D14F-40BE-B106-CFD51F0046D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programming Aptitude", "Programming Aptitude.csproj", "{BEB05B5D-D14F-40BE-B106-CFD51F0046D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

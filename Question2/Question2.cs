@@ -1,4 +1,4 @@
-namespace MM_Guide_Programming_Aptitude.Question2;
+namespace Programming_Aptitude.Question2;
 
 public static class Question2
 {
