@@ -15,8 +15,11 @@ public static class Question2
         return reversedList;
     }
     
-    // public static LinkedList<T>? ReverseLinkedListWithRecursion<T>(LinkedList<T>? list)
-    // {
-    //     throw new NotImplementedException();
-    // }
+    public static LinkedList<T>? ReverseLinkedListWithRecursion<T>(LinkedList<T>? list)
+    {
+        if (list is null)
+            return null;
+
+        return null; // todo
+    }
 }
