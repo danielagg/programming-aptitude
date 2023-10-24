@@ -15,6 +15,6 @@ public static class Question4
         if (root is null)
             return result;
 
-        return default; // todo
+        return new List<TreeNode<T>>();
     }
 }

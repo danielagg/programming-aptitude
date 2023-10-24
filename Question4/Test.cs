@@ -13,4 +13,12 @@ public class Test
             .Should()
             .BeEmpty();
     }
+    
+    [Fact]
+    public void GivenSingleNode_GetParentNodesOfSingleLeaves_ReturnsEmptyResult()
+    {
+        Question4.GetParentNodesOfSingleLeaves(new TreeNode(50))
+            .Should()
+            .BeEmpty();
+    }
 }
