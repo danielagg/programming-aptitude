@@ -120,4 +120,62 @@ public class Test
                 new TreeNode(3) { Left = new TreeNode(10) }
             });
     }
+    
+    [Fact]
+    public void GivenExample3BinaryTree_GetParentNodesOfSingleLeaves_ReturnsParentNodesOfSingleLeaves()
+    {
+        var root = new TreeNode(1)
+        {
+            Left = new TreeNode(5),
+            Right = new TreeNode(6)
+            {
+                Left = new TreeNode(7),
+                Right = new TreeNode(8)
+                {
+                    Left = new TreeNode(9),
+                    Right = new TreeNode(10)
+                    {
+                        Left = new TreeNode(11),
+                        Right = new TreeNode(12)
+                    }
+                }
+            }
+        };
+        
+        Question4.GetParentNodesOfSingleLeaves(root)
+            .Should()
+            .BeEmpty();
+    }
+    
+    [Fact]
+    public void GivenExample4BinaryTree_GetParentNodesOfSingleLeaves_ReturnsParentNodesOfSingleLeaves()
+    {
+        var root = new TreeNode(1)
+        {
+            Left = new TreeNode(5),
+            Right = new TreeNode(6)
+            {
+                Left = new TreeNode(7),
+                Right = new TreeNode(8)
+                {
+                    Left = new TreeNode(9),
+                    Right = new TreeNode(10)
+                    {
+                        Left = new TreeNode(11),
+                        Right = new TreeNode(12)
+                        {
+                            Right = new TreeNode(13)
+                        }
+                    }
+                }
+            }
+        };
+        
+        Question4.GetParentNodesOfSingleLeaves(root)
+            .Should()
+            .BeEquivalentTo(new[]
+            {
+                new TreeNode(12) { Right = new TreeNode(13) }
+            }.ToList());
+    }
 }
