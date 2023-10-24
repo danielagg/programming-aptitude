@@ -17,9 +17,21 @@ public static class Question2
     
     public static LinkedList<T>? ReverseLinkedListWithRecursion<T>(LinkedList<T>? list)
     {
+        // in case caller passes null, we just return the same (does not happen during recursion, only during initial call)
         if (list is null)
             return null;
+        
+        // base case: if list is empty, we're done with recursion
+        if (list.First is null)
+            return new LinkedList<T>();
 
-        return null; // todo
+        var currentHead = list.First.Value;
+        list.RemoveFirst();
+        
+        var reversed = ReverseLinkedListWithRecursion(list)!;
+
+        reversed.AddLast(currentHead);
+        
+        return reversed;
     }
 }
