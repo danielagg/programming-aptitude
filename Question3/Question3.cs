@@ -9,7 +9,7 @@ public static class Question3
          - whitespaces (leading, trailing and within the words) are to be ignored
          - anagrams are case insensitive (eg. Word and word are anagrams)
          - input words can contain numbers (eg. 123 and 321 are anagrams)
-         - input words can contain any UTF-16 character (eg. ϻϱǾ˅ and ˅Ǿϱϻ are anagrams)
+         - input words can contain any UTF-16 characters (eg. ϻϱǾ˅ and ˅Ǿϱϻ are anagrams)
         */
         if (word1 is null || word2 is null)
             return false;
