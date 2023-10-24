@@ -1,3 +1,1 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿Question1.Main(Array.Empty<string>());
